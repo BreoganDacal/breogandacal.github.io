@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanzar la Moneda</title>
+    <link rel="stylesheet" href="coin-toss.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lanzar la Moneda</h1>
+        <div>
+            <label>
+                <input type="radio" name="choice" value="cara" checked> Cara
+            </label>
+            <label>
+                <input type="radio" name="choice" value="cruz"> Cruz
+            </label>
+        </div>
+        <button id="tossButton" class="btn btn-primary">Lanzar Moneda</button>
+        <div id="result"></div>
+        <div id="stats">
+            <p>Caras: <span id="headsCount">0</span></p>
+            <p>Cruces: <span id="tailsCount">0</span></p>
+            <p>Aciertos: <span id="correctCount">0</span></p>
+        </div>
+        <div id="alertContainer"></div>
+    </div>
+    <script src="coin-toss.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+.cell.x {
+    color: blue;
+}
+
+.cell.o {
+    color: red;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Animaciones */
+.win-animation {
+    animation: win 1s forwards;
+}
+
+.lose-animation {
+    animation: lose 1s forwards;
+}
+
+.draw-animation {
+    animation: draw 1s forwards;
+}
+
+@keyframes win {
+    from { background-color: green; }
+    to { background-color: white; }
+}
+
+@keyframes lose {
+    from { background-color: red; }
+    to { background-color: white; }
+}
+
+@keyframes draw {
+    from { background-color: yellow; }
+    to { background-color: white; }
+}
