@@ -13,6 +13,11 @@ const projects = [
         title: "Proyecto 3",
         description: "Tragaperras.",
         link: "proyectos/slot-machine.html"
+    },
+    {
+        title: "Proyecto 4",
+        description: "ajedrez chino.",
+        link: "proyectos/Chess-master/index.html"
     }
 ];
 
