@@ -18,6 +18,11 @@ const projects = [
         title: "Proyecto 4",
         description: "ajedrez chino.",
         link: "proyectos/Chess-master/index.html"
+    },
+    {
+        title: "Proyecto 5",
+        description: "prediccion ruleta por ia",
+        link: "proyectos/ai ruleta/index.html"
     }
 ];
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de Ruleta</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Predicción de Ruleta</h1>
+        <form id="numberForm">
+            <div class="form-group">
+                <label for="numbers">Ingrese números (separados por comas):</label>
+                <input type="text" class="form-control" id="numbers" placeholder="Ejemplo: 1, 2, 3">
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar Números</button>
+        </form>
+        <h2 class="mt-4">Historial de Números</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Porcentaje</th>
+                    <th>Probabilidad</th>
+                </tr>
+            </thead>
+            <tbody id="historyTableBody">
+                <!-- Los números y estadísticas se agregarán aquí -->
+            </tbody>
+        </table>
+        <h2 class="mt-4">Historial Acumulado</h2>
+        <div id="accumulatedHistory" class="border p-3">
+            <!-- El historial acumulado se mostrará aquí -->
+        </div>
+        <h2 class="mt-4">Sugerencias de Apuestas</h2>
+        <div id="suggestions">
+            <!-- Sugerencias de apuestas se mostrarán aquí -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
